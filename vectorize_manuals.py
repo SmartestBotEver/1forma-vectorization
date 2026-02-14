@@ -132,7 +132,8 @@ def main():
     # Проверяем наличие файлов
     files = {
         "Admin.pdf": "admin_manual",
-        "User_Guide.pdf": "user_manual"
+        "User_Guide.pdf": "user_manual",
+        "Maintenance.pdf": "maintenance_manual"
     }
     
     for pdf_file, collection_name in files.items():

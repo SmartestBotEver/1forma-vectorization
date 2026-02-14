@@ -43,12 +43,16 @@ def search_docs(query, collection_name="admin_manual", n_results=5):
 def main():
     if len(sys.argv) < 2:
         print("Использование: python3 query_docs.py 'ваш вопрос' [manual_type] [num_results]")
-        print("\nmanual_type: admin_manual (по умолчанию) или user_manual")
-        print("num_results: количество результатов (по умолчанию 5)")
-        print("\nПример:")
+        print("\nmanual_type:")
+        print("  - admin_manual (по умолчанию) - Руководство администратора")
+        print("  - user_manual - Руководство пользователя")
+        print("  - maintenance_manual - Руководство по техобслуживанию")
+        print("\nnum_results: количество результатов (по умолчанию 5)")
+        print("\nПримеры:")
         print("  python3 query_docs.py 'как настроить пользователей'")
         print("  python3 query_docs.py 'виджеты портала' admin_manual 3")
         print("  python3 query_docs.py 'создание задачи' user_manual 5")
+        print("  python3 query_docs.py 'резервное копирование' maintenance_manual")
         sys.exit(1)
     
     query = sys.argv[1]

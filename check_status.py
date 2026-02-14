@@ -36,7 +36,8 @@ def check_status():
         # Определяем ожидаемое количество
         expected = {
             "admin_manual": 6331,
-            "user_manual": 855
+            "user_manual": 855,
+            "maintenance_manual": 553
         }
         
         exp_count = expected.get(collection.name, "?")
